@@ -17,47 +17,17 @@ Pewlett-Hackard retirement and mentoring analysis using SQL database.
 
 ## The process of project
 
-* Read raw data in csv file.
-* Clean and inspect data, correct inappropriate data.
-* Merge datasets to create new DataFrame gathering more information.
-* Perform calculations for key metrics use groupby() function.
-* Visualize data with tables to tell story and showcase trends.
+* Verify that PostgreSQL and pgAdmin are installed correctly.
+* Be able to create a SQL database using Query
+* Import and export CSVs into database tables
+* Combine data using joins and count the total number of rows
+* Use the DISTINCT ON statement to retrieve the first occurrence for each set of rows
 
 ## Software/Tools/Libraries
 * PostGreSQL 4.24. pgAdmin 4, Visual studio 1.50.
 * Data Source: departments.csv, dept_emp.csv, dept_manager.csv, employees.csv, salaries.csv, titles.csv
 
-## Results of project
-1. The ride-sharing bubble chart shows the total number of rides per city. One bubble chart has all the city types with the different colors.
 
-![PyBer_RideSharing_Data.png](Analysis/PyBer_RideSharing_Data.png)
-
-2. The mean, median, and mode of the number of rides, the fares, and the number of drivers for each city type and create box-and-whisker plots with the statistics
-* Number of ride per the city type
-
-![Ride_count_data.png](Analysis/Fig_ride_count_data.png)
-
-* Ride fare data per the city type
-
-![Ride_fair_data.png](Analysis/Fig_ride_fair_data.png)
-
-* Driver Count Data per the city type
-
-![Drivers_count_data.png](Analysis/Fig_drivers_count_data.png)
-
-3. Pie chart to visualizes each of the percent of total fares, total rides, and total drivers for each city type.
-
-* Ride percentage the city type
-
-![Ride_percentages.png](Analysis/ride_percentages.png)
-
-* Fare percentage per the city type
-
-![Ride_fair_percentage__by_city_type.png](Analysis/fares_percentage__by_city_type.png)
-
-* Driver percentageper the city type
-
-![Drivers_percentages.png](Analysis/driver_percentages.png)
 
 # Challenge
 
@@ -67,6 +37,7 @@ Create a list of candidates for the mentorship program.
 
 
 1. The Entity Relationship Diagrams (ERDs) demonstrates relationships between 6 tables:
+
 ![QuickDBD-export.png](Image/QuickDBD-export.png)
 
 2. Determining the number of individuals retiring:
