@@ -17,7 +17,8 @@ Pewlett-Hackard retirement and mentoring analysis using SQL database.
 
 
 * This analysis improves the access to determine how many people will be retiring and, of those employees, who is eligible for a retirement package.
-* We also determine the number of retiring employees per departments and salary and tiltles, and identify employees who are eligible to participate in a mentorship program. 
+* Update list is general employee information with Employee number, First and Last names,  Gender, to_date, and their current salaries.
+* We also determine the number of retiring employees per departments and tiltles, and identify employees who are eligible to participate in a mentorship program. 
 
 ## The process of project
 
@@ -34,25 +35,29 @@ Pewlett-Hackard retirement and mentoring analysis using SQL database.
 ## Results
 
 
-1. The Entity Relationship Diagrams (ERDs) demonstrates relationships between 6 tables using the Quick Database Diagrams Tools
+1. The Entity Relationship Diagrams (ERDs) demonstrates relationships between 6 tables using the Quick Database Diagrams Tools:
+
+text file for ERD : [Entity Relationship Diagrams](ERD.txt)
 
 ![QuickDBD-export.png](Image/QuickDBD-export.png)
 
-2. Determining the number of individuals retiring:
+2. retirement_info and dept_emp tables:
 
-- SQL for all Retirement Eligibility:[mentorship_eligibilty.csv](/Data/mentorship_eligibilty.csv)
+- SQL for all Retirement Eligibility:[retirement_info.csv](data/retirement_info.csv)
 
 *Queries*
 
 ```
-
 SELECT emp_no, birth_date, first_name, last_name, genger AS gender, hire_date
 INTO retirement_info
 FROM employees
 WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31');
-```
 
+```
+* Table image. head(12)
+
+![retirement_info.PNG](Image/retirement_info.PNG)
 
 
 # Challenge
