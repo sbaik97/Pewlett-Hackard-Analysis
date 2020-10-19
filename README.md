@@ -87,8 +87,10 @@ Retirement titles table(csv) that holds all the titles of current employees, fir
 
 ![retirement_titles.PNG](Image/retirement_titles.PNG)
 
-**In conclusion, There are 41,380 records of individuals ready to retirement**
-
+**In conclusion** 
+ - There are 133776 records of individuals ready to retirement.
+ - Some employees may have multiple titles in the database and create a table that contains the most recent
+title of each employee.
 
 
 ### 2. Remove the duplicates and keep only the most recent title of each employee
