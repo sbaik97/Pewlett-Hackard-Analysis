@@ -81,7 +81,7 @@ SELECT * FROM retirement_titles;
 ```
 Retirement titles table(csv) that holds all the titles of current employees, first name, last name, from and to dates:
 
-[retirement_titles.csv](data/retirement_titles.csv)
+[retirement_titles.csv](data/retirement_titles.cs)
 
 * Table image. head(12)
 
@@ -188,7 +188,7 @@ AND (de.to_date = '9999-01-01')
 ORDER BY em.emp_no;
 SELECT * FROM mentorship_eligibilty;
 ```
-SQL export csv file for eligible for mentor program, [entorship_eligibilty.csv](data/mentorship_eligibilty.csv)
+SQL export csv file for eligible for mentor program, [mentorship_eligibilty.csv](data/mentorship_eligibilty.csv)
 
 * Mentorship eligibility table for current employees (table head(13))
 
