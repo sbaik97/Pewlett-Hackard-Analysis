@@ -76,13 +76,36 @@ ORDER BY de.dept_no;
 ![dept_info.PNG](Image/dept_info.PNG)
 
 
-3. list of retiring employees, and list of employees in both the Sales and Development departments:
+3. List of current employees in both the Sales and Development departments:
 
-[sales_dev_retirees.csv](data/sales_dev_retirees.csv)
+* Employee numbers, first and last names, department name using the IN condition with the WHERE clause
+
+*Queries*
+
+```
+-- Sales and Development Department Retirees 
+SELECT  ce.emp_no,
+        ce.last_name,
+        ce.first_name,
+        d.dept_name
+INTO sales_devel_retirees
+FROM current_emp AS ce
+INNER JOIN dept_emp AS de
+ON (ce.emp_no = de.emp_no)
+INNER JOIN departments AS d
+ON (de.dept_no = d.dept_no)
+WHERE dept_name IN ('Sales', 'Development');
+-- Check the table
+SELECT * FROM sales_devel_retirees;
+
+```
+* Reults :[sales_dev_retirees.csv](data/sales_dev_retirees.csv)
 
 * Table image for retiring employees in both the Sales and Development departments:
 
 ![sales_devel_retirees.PNG](Image/sales_devel_retirees.PNG)
+
+
 
 # Challenge
 
