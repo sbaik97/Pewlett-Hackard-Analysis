@@ -112,13 +112,14 @@ ORDER BY emp_no ASC, to_date DESC ;
 SELECT * FROM retirement_unique_titles;
 ```
 - Current retirement eligibility table(csv) with current title:
+
 [retirement_unique_titles.csv](Data/retirement_unique_titles.csv)
 
 * Table image. head(13)
 
 ![retirement_unique_titles.PNG](Image/retirement_unique_titles.PNG)
 
-**In conclusion, there are 33,118 records of Current Retirement Eligibility** 
+**In conclusion, there are 90,398 records of Current Retirement Eligibility** 
 
 
 
