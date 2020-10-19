@@ -48,6 +48,7 @@ text file for ERD : [Entity Relationship Diagrams](ERD.txt)
 *Queries*
 
 ```
+-- Employee who ready to retire within three years
 SELECT emp_no, first_name, last_name
 INTO retirement_info
 FROM employees
@@ -71,12 +72,17 @@ ORDER BY de.dept_no;
 
 
 * Table image for retirees per department 
+
 ![dept_info.PNG](Image/dept_info.PNG)
 
 
-3. retirement_info and dept_emp tables:
+3. list of retiring employees, and list of employees in both the Sales and Development departments:
 
+[sales_dev_retirees.csv](data/sales_dev_retirees.csv)
 
+* Table image for retiring employees in both the Sales and Development departments:
+
+![sales_devel_retirees.PNG](Image/sales_devel_retirees.PNG)
 
 # Challenge
 
