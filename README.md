@@ -79,7 +79,7 @@ ORDER BY ti.emp_no;
 
 SELECT * FROM retirement_titles;
 ```
-Retirement Titles table that holds all the titles of current employees, 
+Retirement titles table(csv) that holds all the titles of current employees, first name, last name, from and to dates,
 [retirement_titles.csv](data/retirement_titles.csv)
 
 * Table image. head(12)
@@ -87,6 +87,7 @@ Retirement Titles table that holds all the titles of current employees,
 ![retirement_titles.PNG](Image/retirement_titles.PNG)
 
 **In conclusion, There are 41,380 records of individuals ready to retirement**
+
 
 
 ### 2. Remove the duplicates and keep only the most recent title of each employee
@@ -107,14 +108,15 @@ ORDER BY emp_no ASC, to_date DESC ;
 
 SELECT * FROM retirement_unique_titles;
 ```
-- Current Retirement Eligibility with current title:
+- Current retirement eligibility table(csv) with current title:
 [retirement_unique_titles.csv](Data/retirement_unique_titles.csv)
 
-* Table image. head(12)
+* Table image. head(13)
 
 ![retirement_unique_titles.PNG](Image/retirement_unique_titles.PNG)
 
 **In conclusion, there are 33,118 records of Current Retirement Eligibility** 
+
 
 
 ### 3. Each employee ONLY display the most recent title:
