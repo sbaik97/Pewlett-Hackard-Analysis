@@ -66,8 +66,8 @@ Pewlett-Hackard retirement and mentoring analysis using SQL database.
 Create a list of candidates for the mentorship program.
 
 
-1. The Entity Relationship Diagrams (ERDs) demonstrates relationships between original 6 tables:
-![EmployeeDB.png](/EmployeeDB.png)ERD 
+1. The Entity Relationship Diagrams (ERDs) demonstrates relationships between 6 tables:
+![QuickDBD-export.png](Image/QuickDBD-export.png)
 
 2. Determining the number of individuals retiring:
 
@@ -184,7 +184,7 @@ AND (de.to_date = '9999-01-01')
 ORDER BY em.emp_no;
 SELECT * FROM mentorship_eligibilty;
 ```
-* Mentorship eligibility table for current employees (table head(10))
+* Mentorship eligibility table for current employees (table head(13))
 
 ![mentorship_eligibilty.PNG](Image/mentorship_eligibilty.PNG)
 
