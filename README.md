@@ -83,6 +83,7 @@ Retirement Titles table that holds all the titles of current employees,
 [retirement_titles.csv](data/retirement_titles.csv)
 
 * Table image. head(13)
+
 ![retirement_titles.PNG](Image/retirement_titles.PNG)
 
 **In conclusion, There are 41,380 records of individuals ready to retirement**
