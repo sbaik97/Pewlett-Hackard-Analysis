@@ -92,7 +92,7 @@ Retirement titles table(csv) that holds all the titles of current employees, fir
  - Some employees have multiple titles in the database and create a table that contains the most recent title of each employee.
 
 
-### 2. Remove the duplicates and keep only the most recent title of each employee
+### 2. Remove the duplicates and displayonly the most recent title of each employee
 
 --Create a Unique Titles table that contains the employee number, first and last name, and most recent title.
 --Use the DISTINCT ON fuction to retrieve the first occurrence of the employee number for each set of rows.
@@ -118,53 +118,41 @@ SELECT * FROM retirement_unique_titles;
 
 ![retirement_unique_titles.PNG](Image/retirement_unique_titles.PNG)
 
-**In conclusion, there are 90,398 records of Current Retirement Eligibility** 
+**In conclusion**
+ - There are 90,398 records of Current Retirement Eligibility.
 
 
-
-### 3. Each employee ONLY display the most recent title:
-
-- By using **partition** by and row_number() function.
-
-*Queries*
-
-```
-SELECT employee_number, first_name, last_name, title, from_date, salary
-INTO current_title_info
-FROM (SELECT *, ROW_NUMBER() OVER (PARTITION BY (cei.employee_number, cei.first_name, cei.last_name)
-                ORDER BY cei.from_date DESC) AS emp_row_number
-      FROM challenge_emp_info AS cei) AS unique_employee	  
-WHERE emp_row_number =1;
-```
-
-5. The Frequency count of employee titles:
-[challenge_title_info.csv](/Data/challenge_title_info.csv)
+### 3. The Frequency count of employee titles 
+- Count the number of titles from the Unique Titles table
+- Create a retiring titles tables
+- Group the table by title, then sort the count column in descending order
 
 *Queries*
 
 ```
-SELECT *, count(ct.Employee_number) 
-		OVER (PARTITION BY ct.title ORDER BY ct.from_date DESC) AS emp_count
-INTO challenge_title_info
-FROM current_title_info AS ct;
-```
+SELECT COUNT(rt.emp_no), rt.title
+INTO retiring_titles_info
+FROM retirement_unique_titles AS rt
+GROUP BY rt.title
+ORDER BY 1 DESC;
+SELECT * FROM retiring_titles_info;
 
-a summary count of employees for each title:[challenge_title_count_info.csv](/Data/challenge_title_count_info.csv)
+- Retiring Titles table that contains the number of titles filled by employees who are retiring:
 
-*Queries*
+[retiring_titles.csv](Data/retiring_titles.csv)
 
-```
-SELECT COUNT(employee_number), title
-FROM challenge_title_info
-GROUP BY title;
-```
+* Table image
+
+![retiring_titles.PNG](Image/retiring_titles.PNG)
 
 **Conclusion**
-**In the 33118 records of Current Retirement Eligibility, there are 251 Assistant Engineers, 2711 engineers, two managers 2022 staffs,12872 Senior Staffs and 1609 Technique Leaders**
+ - In the 90,398 records of Current Retirement Eligibility, there are retiring titles with 29,414 Senior Engineer, 28,254 Senior Staffs, 14,222 Engineers, 12,243 Staff, 4502 Technique Leader, 1761 Assistant Engineers, and two managers. 
 
 
 
-6. Determining the number of individuals available for mentorship role:
+### 4. Determining the number of individuals available for mentorship role
+
+ - Create a mentorship-eligibility table that holds the current employees who were born between January 1, 1965 and December 31, 1965.
 
 *Queries*
 
