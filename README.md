@@ -94,9 +94,9 @@ Retirement titles table(csv) that holds all the titles of current employees, fir
 
 ### 2. Remove the duplicates and displayonly the most recent title of each employee
 
---Create a Unique Titles table that contains the employee number, first and last name, and most recent title.
---Use the DISTINCT ON fuction to retrieve the first occurrence of the employee number for each set of rows.
---Sort the Unique Titles table in ascending order by the employee number and descending order by the last date.
+-Create a Unique Titles table that contains the employee number, first and last name, and most recent title.
+-Use the DISTINCT ON fuction to retrieve the first occurrence of the employee number for each set of rows.
+-Sort the Unique Titles table in ascending order by the employee number and descending order by the last date.
 
 *Queries*
 ```
@@ -136,7 +136,7 @@ FROM retirement_unique_titles AS rt
 GROUP BY rt.title
 ORDER BY 1 DESC;
 SELECT * FROM retiring_titles_info;
-
+```
 - Retiring Titles table that contains the number of titles filled by employees who are retiring:
 
 [retiring_titles.csv](Data/retiring_titles.csv)
