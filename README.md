@@ -12,14 +12,12 @@ Pewlett-Hackard retirement and mentoring analysis using SQL database.
     - The Entity Relationship Diagrams (ERDs) that hold the primary and foreign keys and data types for each column.
     - Three forms of ERDs: conceptual, logical, and physical diagram.
     - Create a Database in SQL using Postgres and pgAdmin.
-    - Write Statements to Create Tables
-    - Determine the mean, median, and mode and create box-and-whisker plots that visualize the number of rides, the fares, and the number of drivers for each city type.
-    - Create a pie chart that visualizes each of the percent of total fares, total rides, and total drivers for each city type.
+    - Write Statements to Create Tables and import and export csv file type of tables, and handle Error Messages.
+    - Perform queries to learn when employees were hired as well as their age using join, group by, count, etc.
 
-* This analysis improves the access to ride-sharing service and determining the affordability for underserved neighborhoods.
 
-determine the number of retiring employees per title, and identify employees who are eligible to participate in a mentorship program. 
-Then, you’ll write a report that summarizes your analysis and helps prepare Bobby’s manager for the “silver tsunami” as many current employees reach retirement age.
+* This analysis improves the access to determine how many people will be retiring and, of those employees, who is eligible for a retirement package.
+* We also determine the number of retiring employees per departments and salary and tiltles, and identify employees who are eligible to participate in a mentorship program. 
 
 ## The process of project
 
