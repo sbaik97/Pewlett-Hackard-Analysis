@@ -55,42 +55,55 @@ WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31');
 ```
 
-**In conclusion, There are 41,380 records of individuals ready to retirement**
 
-3. Determining the number of individuals being hired:
-
--Current Retirement Eligibility:
+### 1. Create a Retirement Titles table that holds all the titles of current employees 
+-- who were born between January 1, 1952 and December 31, 1955
 
 *Queries*
 
 ```
-SELECT r.emp_no, r.first_name, r.last_name,d.dep_no, d.to_date
-INTO current_emp
-FROM retirement_info AS r
-LEFT JOIN dept_emp AS d
-ON r.emp_no = d.emp_no
-WHERE d.to_date = '9999-01-01';
-```
+SELECT e.emp_no, 
+	e.first_name, 
+	e.last_name,
+	ti.title, 
+	ti.from_date, 
+	ti.to_date
+INTO retirement_titles
+FROM employees AS e
+INNER JOIN Titles AS ti
+ON (e.emp_no = ti.emp_no)
+WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
+ORDER BY ti.emp_no;
 
+SELECT * FROM retirement_titles;
+```
+**In conclusion, There are 41,380 records of individuals ready to retirement**
+
+
+### 2. Remove these duplicates and keep only the most recent title of each employee
+
+
+v)
+
+*Queries*
+```
+SELECT DISTINCT ON (emp_no) emp_no,
+	first_name, 
+	last_name, 
+	title
+INTO retirement_unique_titles
+FROM retirement_titles AS rt
+ORDER BY emp_no ASC, to_date DESC ;
+
+SELECT * FROM retirement_unique_titles;
+```
+- Current Retirement Eligibility with title and salary information:
+[challenge_emp_info.csv](/Data/challenge_emp_info.cs
 
 **In conclusion, there are 33,118 records of Current Retirement Eligibility** 
 
-- Current Retirement Eligibility with title and salary information:
-[challenge_emp_info.csv](/Data/challenge_emp_info.csv)
 
-*Queries*
-```
-SELECT ce.emp_no AS Employee_number,ce.first_name, ce.last_name, 
-    t.title AS Title, t.from_date, s.salary AS Salary
-INTO challenge_emp_info
-FROM current_emp AS ce
-INNER JOIN titles AS t ON ce.emp_no = t.emp_no
-INNER JOIN salaries AS s ON ce.emp_no = s.emp_no;
-
-```
-
-
-4. Each employee ONLY display the most recent title:
+### 3. Each employee ONLY display the most recent title:
 
 - By using **partition** by and row_number() function.
 
@@ -129,6 +142,8 @@ GROUP BY title;
 
 **Conclusion**
 **In the 33118 records of Current Retirement Eligibility, there are 251 Assistant Engineers, 2711 engineers, two managers 2022 staffs,12872 Senior Staffs and 1609 Technique Leaders**
+
+
 
 6. Determining the number of individuals available for mentorship role:
 SQL for eligible for mentor program, [entorship_eligibilty.csv](data/mentorship_eligibilty.csv)
