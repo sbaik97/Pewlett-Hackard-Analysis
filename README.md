@@ -112,7 +112,7 @@ SELECT * FROM retirement_unique_titles;
 ```
 - Current retirement eligibility table(csv) with current title:
 
-[retirement_unique_titles.csv](Data/retirement_unique_titles.csv)
+[retirement_unique_titles.csv](data/retirement_unique_titles.csv)
 
 * Table image. head(13)
 
@@ -139,7 +139,7 @@ SELECT * FROM retiring_titles_info;
 ```
 - Retiring Titles table that contains the number of titles filled by employees who are retiring:
 
-[retiring_titles.csv](Data/retiring_titles.csv)
+[retiring_titles.csv](data/retiring_titles.csv)
 
 * Table image
 
