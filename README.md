@@ -186,7 +186,7 @@ SELECT * FROM mentorship_eligibilty;
 ```
 * Mentorship eligibility table for current employees (table head(10))
 
-![mentorship_eligibilty.PNG](data/mentorship_eligibilty.PNG)
+![mentorship_eligibilty.PNG](Image/mentorship_eligibilty.PNG)
 
 **In conclusion, there are 1549 active employees eligible for mentor plan.**
 
