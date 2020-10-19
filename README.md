@@ -58,7 +58,7 @@ AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31');
 Create a list of candidates for the mentorship program.
 
 
-### 1. Create a Retirement Titles table that holds all the titles of current employees 
+### 1. Create a retirement titles table that holds all the titles of current employees 
 -- who were born between January 1, 1952 and December 31, 1955
 
 *Queries*
