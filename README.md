@@ -27,13 +27,7 @@ Pewlett-Hackard retirement and mentoring analysis using SQL database.
 * PostGreSQL 4.24. pgAdmin 4, Visual studio 1.50.
 * Data Source: departments.csv, dept_emp.csv, dept_manager.csv, employees.csv, salaries.csv, titles.csv
 
-
-
-# Challenge
-
-## Object
-
-Create a list of candidates for the mentorship program.
+## Results
 
 
 1. The Entity Relationship Diagrams (ERDs) demonstrates relationships between 6 tables:
@@ -54,6 +48,14 @@ FROM employees
 WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31');
 ```
+
+
+
+# Challenge
+
+## Object
+
+Create a list of candidates for the mentorship program.
 
 
 ### 1. Create a Retirement Titles table that holds all the titles of current employees 
@@ -77,13 +79,20 @@ ORDER BY ti.emp_no;
 
 SELECT * FROM retirement_titles;
 ```
+Retirement Titles table that holds all the titles of current employees, 
+[retirement_titles.csv](data/retirement_titles.csv)
+
+* Table image. head(13)
+![retirement_titles.PNG](Image/retirement_titles.PNG)
+
 **In conclusion, There are 41,380 records of individuals ready to retirement**
 
 
-### 2. Remove these duplicates and keep only the most recent title of each employee
+### 2. Remove the duplicates and keep only the most recent title of each employee
 
-
-v)
+--Create a Unique Titles table that contains the employee number, first and last name, and most recent title.
+--Use the DISTINCT ON fuction to retrieve the first occurrence of the employee number for each set of rows.
+--Sort the Unique Titles table in ascending order by the employee number and descending order by the last date.
 
 *Queries*
 ```
@@ -97,8 +106,8 @@ ORDER BY emp_no ASC, to_date DESC ;
 
 SELECT * FROM retirement_unique_titles;
 ```
-- Current Retirement Eligibility with title and salary information:
-[challenge_emp_info.csv](/Data/challenge_emp_info.cs
+- Current Retirement Eligibility with current title:
+[retirement_unique_titles.csv](Data/retirement_unique_titles.csv)
 
 **In conclusion, there are 33,118 records of Current Retirement Eligibility** 
 
@@ -146,10 +155,8 @@ GROUP BY title;
 
 
 6. Determining the number of individuals available for mentorship role:
-SQL for eligible for mentor program, [entorship_eligibilty.csv](data/mentorship_eligibilty.csv)
 
 *Queries*
-
 
 ```
 SELECT DISTINCT ON (em.emp_no) em.emp_no, 
@@ -170,6 +177,8 @@ AND (de.to_date = '9999-01-01')
 ORDER BY em.emp_no;
 SELECT * FROM mentorship_eligibilty;
 ```
+SQL export csv file for eligible for mentor program, [entorship_eligibilty.csv](data/mentorship_eligibilty.csv)
+
 * Mentorship eligibility table for current employees (table head(13))
 
 ![mentorship_eligibilty.PNG](Image/mentorship_eligibilty.PNG)
