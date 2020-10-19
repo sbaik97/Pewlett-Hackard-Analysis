@@ -17,8 +17,10 @@ Pewlett-Hackard retirement and mentoring analysis using SQL database.
 
 
 * This analysis improves the access to determine how many people will be retiring and, of those employees, who is eligible for a retirement package.
-* Update list is general employee information with Employee number, First and Last names,  Gender, to_date, and their current salaries.
-* We also determine the number of retiring employees per departments and tiltles, and identify employees who are eligible to participate in a mentorship program. 
+* We also determine the number of retiring employees per departments and tiltles, and identify employees who are eligible to participate in a mentorship program.
+* We will create general employee information list with Employee number, First and Last names,  Gender, to_date, and their current salaries.
+* We will analysis the list of current employees in both the Sales and Development departments for metorship program.
+ 
 
 ## The process of project
 
