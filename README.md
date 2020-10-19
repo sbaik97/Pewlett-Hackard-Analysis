@@ -79,7 +79,8 @@ ORDER BY ti.emp_no;
 
 SELECT * FROM retirement_titles;
 ```
-Retirement titles table(csv) that holds all the titles of current employees, first name, last name, from and to dates,
+Retirement titles table(csv) that holds all the titles of current employees, first name, last name, from and to dates:
+
 [retirement_titles.csv](data/retirement_titles.csv)
 
 * Table image. head(12)
