@@ -55,7 +55,10 @@ AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31');
 
 ## Object
 
-Create a list of candidates for the mentorship program.
+- Create a retirement titles table that holds all the titles of current employees who are retiring (filter by January 1, 1952 and December 31, 1955).
+- Remove the duplicates of titles and create a table that contains the most recent title of each employee.
+- Count the number of titles from the unique titles.
+- Create a list of candidates for the mentorship program (the current employees filterd by January 1, 1965 and December 31, 1965).
 
 
 ### 1. Create a retirement titles table that holds all the titles of current employees 
@@ -94,9 +97,9 @@ Retirement titles table(csv) that holds all the titles of current employees, fir
 
 ### 2. Remove the duplicates and displayonly the most recent title of each employee
 
--Create a Unique Titles table that contains the employee number, first and last name, and most recent title.
+-Create a unique ritles table that contains the employee number, first and last name, and most recent title.
 -Use the DISTINCT ON fuction to retrieve the first occurrence of the employee number for each set of rows.
--Sort the Unique Titles table in ascending order by the employee number and descending order by the last date.
+-Sort the unique titles table in ascending order by the employee number and descending order by the last date.
 
 *Queries*
 ```
