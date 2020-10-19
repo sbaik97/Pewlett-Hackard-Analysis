@@ -82,7 +82,7 @@ SELECT * FROM retirement_titles;
 Retirement Titles table that holds all the titles of current employees, 
 [retirement_titles.csv](data/retirement_titles.csv)
 
-* Table image. head(13)
+* Table image. head(12)
 
 ![retirement_titles.PNG](Image/retirement_titles.PNG)
 
@@ -109,6 +109,10 @@ SELECT * FROM retirement_unique_titles;
 ```
 - Current Retirement Eligibility with current title:
 [retirement_unique_titles.csv](Data/retirement_unique_titles.csv)
+
+* Table image. head(12)
+
+![retirement_unique_titles.PNG](Image/retirement_unique_titles.PNG)
 
 **In conclusion, there are 33,118 records of Current Retirement Eligibility** 
 
