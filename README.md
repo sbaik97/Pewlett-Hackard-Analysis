@@ -99,9 +99,9 @@ WHERE dept_name IN ('Sales', 'Development');
 SELECT * FROM sales_devel_retirees;
 
 ```
-* Reults :[sales_dev_retirees.csv](data/sales_dev_retirees.csv)
+* Results :[sales_dev_retirees.csv](data/sales_dev_retirees.csv)
 
-* Table image for retiring employees in both the Sales and Development departments:
+* Table image for current employees in both the Sales and Development departments:
 
 ![sales_devel_retirees.PNG](Image/sales_devel_retirees.PNG)
 
