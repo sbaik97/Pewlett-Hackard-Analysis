@@ -113,10 +113,10 @@ SELECT * FROM sales_devel_retirees;
 
 ## Object
 
-- Create a retirement titles table that holds all the titles of current employees who are retiring (filter by January 1, 1952 and December 31, 1955).
+- Create a retirement titles table that holds all the titles of current employees who are retiring (filtered by January 1, 1952 and December 31, 1955).
 - Remove the duplicates of titles and create a table that contains the most recent title of each employee.
 - Count the number of titles from the unique titles.
-- Create a list of candidates for the mentorship program (the current employees filterd by January 1, 1965 and December 31, 1965).
+- Create a list of candidates for the mentorship program (the current employees filtered by January 1, 1965 and December 31, 1965).
 
 
 ### 1. Create a retirement titles table that holds all the titles of current employees 
