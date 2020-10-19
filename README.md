@@ -81,7 +81,7 @@ SELECT * FROM retirement_titles;
 ```
 Retirement titles table(csv) that holds all the titles of current employees, first name, last name, from and to dates:
 
-[retirement_titles.csv](data/retirement_titles.cs)
+[retirement_titles.csv](data/retirement_titles.csv)
 
 * Table image. head(12)
 
@@ -89,8 +89,7 @@ Retirement titles table(csv) that holds all the titles of current employees, fir
 
 **In conclusion** 
  - There are 133776 records of individuals ready to retirement.
- - Some employees may have multiple titles in the database and create a table that contains the most recent
-title of each employee.
+ - Some employees have multiple titles in the database and create a table that contains the most recent title of each employee.
 
 
 ### 2. Remove the duplicates and keep only the most recent title of each employee
