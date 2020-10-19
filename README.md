@@ -7,7 +7,7 @@ Pewlett-Hackard retirement and mentoring analysis using SQL database.
 * SQL is one of the most widely used query languages used everywhere—small and large businesses, and even individuals working on personal projects.
 * We will organize and query data, especially on a large scale, makes SQL knowledge a highly sought after skill in the workforce from the Pewlett Hackard analysis.
 
-* Here is the list of deliverables for the SQL analysis of the Pewlett Hackard analysis:
+* Here is the list of deliverables for the SQL analysis of the Pewlett Hackard company:
 
     - The Entity Relationship Diagrams (ERDs) that hold the primary and foreign keys and data types for each column.
     - Three forms of ERDs: conceptual, logical, and physical diagram.
