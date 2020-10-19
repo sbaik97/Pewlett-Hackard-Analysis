@@ -3,13 +3,16 @@ Pewlett-Hackard retirement and mentoring analysis using SQL database.
 
 ## Project Background and Goals
 
-* Matplotlib has a rich set of features for creating and annotating charts that visualize data in a Data Series or DataFrame.
-* This is a data analyst project at PyBer, a ride-sharing app company valued at $2.3 billion and we need to analyze all the rideshare data from January to early May of 2019 and create a compelling visualization using Matplotlib and SciPy statistics.
+* SQL stands for Structured Query Language that used to communicate with a database for managing data held in a relational database management system.
+* SQL is one of the most widely used query languages used everywhere—small and large businesses, and even individuals working on personal projects.
+* We will organize and query data, especially on a large scale, makes SQL knowledge a highly sought after skill in the workforce from the Pewlett Hackard analysis.
 
-* Here is the list of deliverables for the analysis of the PyBer analysis:
+* Here is the list of deliverables for the SQL analysis of the Pewlett Hackard analysis:
 
-    - Perform exploratory analysis on data from large csv files.
-    - Create a bubble chart that showcases the average fare versus the total number of rides with bubble size based on the total number of drivers for each city type, including urban, suburban, and rural.
+    - The Entity Relationship Diagrams (ERDs) that hold the primary and foreign keys and data types for each column.
+    - Three forms of ERDs: conceptual, logical, and physical diagram.
+    - Create a Database in SQL using Postgres and pgAdmin.
+    - Write Statements to Create Tables
     - Determine the mean, median, and mode and create box-and-whisker plots that visualize the number of rides, the fares, and the number of drivers for each city type.
     - Create a pie chart that visualizes each of the percent of total fares, total rides, and total drivers for each city type.
 
@@ -33,7 +36,7 @@ Then, you’ll write a report that summarizes your analysis and helps prepare Bo
 ## Results
 
 
-1. The Entity Relationship Diagrams (ERDs) demonstrates relationships between 6 tables:
+1. The Entity Relationship Diagrams (ERDs) demonstrates relationships between 6 tables using the Quick Database Diagrams Tools
 
 ![QuickDBD-export.png](Image/QuickDBD-export.png)
 
