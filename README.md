@@ -1,6 +1,64 @@
 # Pewlett-Hackard-Analysis
 Pewlett-Hackard retirement and mentoring analysis using SQL database.
 
+## Project Background and Goals
+
+* Matplotlib has a rich set of features for creating and annotating charts that visualize data in a Data Series or DataFrame.
+* This is a data analyst project at PyBer, a ride-sharing app company valued at $2.3 billion and we need to analyze all the rideshare data from January to early May of 2019 and create a compelling visualization using Matplotlib and SciPy statistics.
+
+* Here is the list of deliverables for the analysis of the PyBer analysis:
+
+    - Perform exploratory analysis on data from large csv files.
+    - Create a bubble chart that showcases the average fare versus the total number of rides with bubble size based on the total number of drivers for each city type, including urban, suburban, and rural.
+    - Determine the mean, median, and mode and create box-and-whisker plots that visualize the number of rides, the fares, and the number of drivers for each city type.
+    - Create a pie chart that visualizes each of the percent of total fares, total rides, and total drivers for each city type.
+
+* This analysis improves the access to ride-sharing service and determining the affordability for underserved neighborhoods.
+
+## The process of project
+
+* Read raw data in csv file.
+* Clean and inspect data, correct inappropriate data.
+* Merge datasets to create new DataFrame gathering more information.
+* Perform calculations for key metrics use groupby() function.
+* Visualize data with tables to tell story and showcase trends.
+
+## Software/Tools/Libraries
+* PostGreSQL 4.24. pgAdmin 4, Visual studio 1.50.
+* Data Source: departments.csv, dept_emp.csv, dept_manager.csv, employees.csv, salaries.csv, titles.csv
+
+## Results of project
+1. The ride-sharing bubble chart shows the total number of rides per city. One bubble chart has all the city types with the different colors.
+
+![PyBer_RideSharing_Data.png](Analysis/PyBer_RideSharing_Data.png)
+
+2. The mean, median, and mode of the number of rides, the fares, and the number of drivers for each city type and create box-and-whisker plots with the statistics
+* Number of ride per the city type
+
+![Ride_count_data.png](Analysis/Fig_ride_count_data.png)
+
+* Ride fare data per the city type
+
+![Ride_fair_data.png](Analysis/Fig_ride_fair_data.png)
+
+* Driver Count Data per the city type
+
+![Drivers_count_data.png](Analysis/Fig_drivers_count_data.png)
+
+3. Pie chart to visualizes each of the percent of total fares, total rides, and total drivers for each city type.
+
+* Ride percentage the city type
+
+![Ride_percentages.png](Analysis/ride_percentages.png)
+
+* Fare percentage per the city type
+
+![Ride_fair_percentage__by_city_type.png](Analysis/fares_percentage__by_city_type.png)
+
+* Driver percentageper the city type
+
+![Drivers_percentages.png](Analysis/driver_percentages.png)
+
 # Challenge
 
 ## Object
@@ -8,8 +66,8 @@ Pewlett-Hackard retirement and mentoring analysis using SQL database.
 Create a list of candidates for the mentorship program.
 
 
-1. the ERD demonstrates relationships between original 6 tables:
-![EmployeeDB.png](/EmployeeDB.png)
+1. The Entity Relationship Diagrams (ERDs) demonstrates relationships between original 6 tables:
+![EmployeeDB.png](/EmployeeDB.png)ERD 
 
 2. Determining the number of individuals retiring:
 
