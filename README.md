@@ -15,6 +15,9 @@ Pewlett-Hackard retirement and mentoring analysis using SQL database.
 
 * This analysis improves the access to ride-sharing service and determining the affordability for underserved neighborhoods.
 
+determine the number of retiring employees per title, and identify employees who are eligible to participate in a mentorship program. 
+Then, you’ll write a report that summarizes your analysis and helps prepare Bobby’s manager for the “silver tsunami” as many current employees reach retirement age.
+
 ## The process of project
 
 * Verify that PostgreSQL and pgAdmin are installed correctly.
@@ -178,7 +181,9 @@ AND (de.to_date = '9999-01-01')
 ORDER BY em.emp_no;
 SELECT * FROM mentorship_eligibilty;
 ```
-SQL export csv file for eligible for mentor program, [mentorship_eligibilty.csv](data/mentorship_eligibilty.csv)
+SQL exported csv file for eligible for mentor program:
+
+[mentorship_eligibilty.csv](data/mentorship_eligibilty.csv)
 
 * Mentorship eligibility table for current employees (table head(13))
 
