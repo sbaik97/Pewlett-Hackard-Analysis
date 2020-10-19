@@ -71,7 +71,7 @@ Create a list of candidates for the mentorship program.
 
 2. Determining the number of individuals retiring:
 
-- SQL for all Retirement Eligibility:[retirement_info.csv](/Data/retirement_info.csv)
+- SQL for all Retirement Eligibility:[mentorship_eligibilty.csv](/Data/mentorship_eligibilty.csv)
 
 *Queries*
 
