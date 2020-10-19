@@ -160,7 +160,7 @@ GROUP BY title;
 **In the 33118 records of Current Retirement Eligibility, there are 251 Assistant Engineers, 2711 engineers, two managers 2022 staffs,12872 Senior Staffs and 1609 Technique Leaders**
 
 6. Determining the number of individuals available for mentorship role:
-SQL for eligible for mentor program, [challenge_mentor_info.csv](/Data/challenge_mentor_info.csv)
+SQL for eligible for mentor program, [challenge_mentor_info.csv](Data/challenge_mentor_info.csv)
 
 *Queries*
 
