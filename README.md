@@ -160,19 +160,29 @@ GROUP BY title;
 **In the 33118 records of Current Retirement Eligibility, there are 251 Assistant Engineers, 2711 engineers, two managers 2022 staffs,12872 Senior Staffs and 1609 Technique Leaders**
 
 6. Determining the number of individuals available for mentorship role:
-SQL for eligible for mentor program, [cmentorship_eligibilty.csv](data/mentorship_eligibilty.csv)
+SQL for eligible for mentor program, [entorship_eligibilty.csv](data/mentorship_eligibilty.csv)
 
 *Queries*
 
 
 ```
-SELECT em.emp_no,em.first_name, em.last_name, 
-    t.title AS Title, t.from_date, t.to_date
-INTO challenge_mentor_info
+SELECT DISTINCT ON (em.emp_no) em.emp_no, 
+	em.first_name, 
+	em.last_name,
+	em.birth_date,
+	de.from_date, 
+	de.to_date,
+	ti.title
+INTO mentorship_eligibilty
 FROM Employees AS em
-INNER JOIN titles AS t ON em.emp_no = t.emp_no
+INNER JOIN dept_emp AS de 
+ON em.emp_no = de.emp_no
+INNER JOIN titles AS ti 
+ON em.emp_no = ti.emp_no
 WHERE (em.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
-AND (t.to_date = '9999-01-01');
+AND (de.to_date = '9999-01-01')
+ORDER BY em.emp_no;
+SELECT * FROM mentorship_eligibilty;
 ```
 **In conclusion, there are 1549 active employees eligible for mentor plan.**
 
