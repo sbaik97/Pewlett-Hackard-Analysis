@@ -87,7 +87,7 @@ Retirement titles table(csv) that holds all the titles of current employees, fir
 
 ![retirement_titles.PNG](Image/retirement_titles.PNG)
 
-**In conclusion** 
+**-Conclusion** 
  - There are 133776 records of individuals ready to retirement.
  - Some employees have multiple titles in the database and create a table that contains the most recent title of each employee.
 
@@ -118,7 +118,7 @@ SELECT * FROM retirement_unique_titles;
 
 ![retirement_unique_titles.PNG](Image/retirement_unique_titles.PNG)
 
-**In conclusion**
+**-Conclusion**
  - There are 90,398 records of Current Retirement Eligibility.
 
 
@@ -145,7 +145,7 @@ SELECT * FROM retiring_titles_info;
 
 ![retiring_titles.PNG](Image/retiring_titles.PNG)
 
-**Conclusion**
+**-Conclusion**
  - In the 90,398 records of Current Retirement Eligibility, there are retiring titles with 29,414 Senior Engineer, 28,254 Senior Staffs, 14,222 Engineers, 12,243 Staff, 4502 Technique Leader, 1761 Assistant Engineers, and two managers. 
 
 
@@ -181,7 +181,7 @@ SQL export csv file for eligible for mentor program, [mentorship_eligibilty.csv]
 
 ![mentorship_eligibilty.PNG](Image/mentorship_eligibilty.PNG)
 
-**In conclusion, there are 1549 active employees eligible for mentor plan.**
+**Conclusion, there are 1549 active employees eligible for mentor plan.**
 
 ### Limitation and Suggestion
  
